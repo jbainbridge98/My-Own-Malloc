@@ -1,0 +1,11 @@
+Test case D-
+
+Test case D is my way of showing that free is freeing the actual pointer it is given. The test cases given could have been easily worked around with the myFree function
+by having the myFree function just free the first non free block in the data. I did not do this, myFree in this code frees the data at the given pointer, and test case D
+highlights this.
+
+Test case E-
+
+Test case E shows that my code handles all the errors that the normal malloc does not. My malloc does not allow you to free an address that is not a pointer, free a pointer
+that was not malloced, free a pointer that was already freed, or allow the user to ask for more memory than it can handle. When any of these errors occur my code outputs
+detailed errors. I apologize in advance for the many error messages I push out, it is in the name of science.
